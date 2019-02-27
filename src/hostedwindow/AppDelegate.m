@@ -115,7 +115,7 @@
         CGRect rect = CGRectZero;
         CGRectMakeWithDictionaryRepresentation(CFDictionaryGetValue(windowInfo, kCGWindowBounds), &rect);
         rect.origin.y = _screensVOffset - (rect.origin.y+rect.size.height); // vflip and offset coordinate system
-        if(!NSContainsRect(_screensBounds, rect)) continue; // skip offscreen
+        if(!NSIntersectsRect(_screensBounds, rect)) continue; // skip offscreen
         
         CGFloat windowAlpha =  [(__bridge NSNumber*)CFDictionaryGetValue(windowInfo, kCGWindowAlpha) floatValue];
         if(windowAlpha == 0) continue; // skip invisible
@@ -263,7 +263,7 @@
         CGRect rect = CGRectZero;
         CGRectMakeWithDictionaryRepresentation(CFDictionaryGetValue(windowInfo, kCGWindowBounds), &rect);
         rect.origin.y = _screensVOffset - (rect.origin.y+rect.size.height); // vflip and offset coordinate system
-        if(!NSContainsRect(_screensBounds, rect)) continue; // skip offscreen
+        if(!NSIntersectsRect(_screensBounds, rect)) continue; // skip offscreen
         
         CGFloat windowAlpha =  [(__bridge NSNumber*)CFDictionaryGetValue(windowInfo, kCGWindowAlpha) floatValue];
         if(windowAlpha == 0) continue; // skip invisible
