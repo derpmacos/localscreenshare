@@ -1,5 +1,5 @@
 # localscreenshare
-screensharing (or rather viewing) of the local screen to itself
+Use private API for screensharing(or rather viewing) of the local screen to itself.
 
 NOTE: the preview doesn't allow control of the windows it shows...
 
