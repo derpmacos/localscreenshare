@@ -9,11 +9,11 @@ The magic of CAPluginLayer is that it has very low performance impact - any perf
 
 Should run 10.9-10.14, though I'm seeing some rendering artifacts in 10.9.
 
-![Normal Window View](normal.jpg)
-![The Display dropdown](displays.jpg)
-![The Processes dropdown](processes.jpg)
-![Desktop toggle](desktop.jpg)
-![Outlines toggle](outlines.jpg)
+![Normal Window View](normal.jpeg)
+![The Display dropdown](displays.jpeg)
+![The Processes dropdown](processes.jpeg)
+![Desktop toggle](desktop.jpeg)
+![Outlines toggle](outlines.jpeg)
 
 
 [App Download](downloads/hostedwindow.app.zip)
